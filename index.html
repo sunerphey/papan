@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>Kitchen cabinet studio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Kitchen cabinet studio</h1>
+      <nav class="tabs">
+        <button data-tab="view" class="active">3D view</button>
+        <button data-tab="order">Order list</button>
+      </nav>
+      <div class="actions">
+        <button id="open-all">Open all</button>
+        <button id="close-all">Close all</button>
+        <button id="download">Download order (CSV)</button>
+      </div>
+    </header>
+    <div id="notice" hidden></div>
+    <main>
+      <section id="view">
+        <div class="hint">Click a door, drawer or flap to open it · drag to orbit · scroll to zoom</div>
+      </section>
+      <section id="order" hidden></section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

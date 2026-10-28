@@ -1,0 +1,249 @@
+{
+  "format": "kitchen-design",
+  "version": 1,
+  "units": "mm",
+  "room": {
+    "height": 2600,
+    "walls": [
+      {
+        "id": "north",
+        "start": [0, 0]
+      },
+      {
+        "id": "corner",
+        "start": [3400, 0]
+      },
+      {
+        "id": "east",
+        "start": [4200, 800]
+      },
+      {
+        "id": "south",
+        "start": [4200, 4000]
+      },
+      {
+        "id": "west",
+        "start": [0, 4000]
+      }
+    ]
+  },
+  "construction": {
+    "frontGap": 3,
+    "shelfSetback": 20,
+    "railWidth": 100,
+    "worktopDepth": 600,
+    "base": {
+      "height": 720,
+      "depth": 560,
+      "legHeight": 140,
+      "plinthSetback": 50
+    },
+    "wall": {
+      "height": 720,
+      "depth": 320,
+      "bottomFromFloor": 1450
+    }
+  },
+  "materials": {
+    "carcass": {
+      "name": "Melamine chipboard, white",
+      "thickness": 18,
+      "color": "#eeede8",
+      "maxLength": 2800
+    },
+    "drawer": {
+      "name": "Melamine chipboard, white",
+      "thickness": 16,
+      "color": "#eeede8",
+      "maxLength": 2800
+    },
+    "back": {
+      "name": "HDF, white",
+      "thickness": 3,
+      "color": "#f2f1ec",
+      "maxLength": 2800
+    },
+    "front": {
+      "name": "MDF",
+      "thickness": 18,
+      "color": "#5d6b5f",
+      "maxLength": 2800
+    },
+    "worktop": {
+      "name": "Laminate worktop, oak",
+      "thickness": 38,
+      "color": "#a9845a",
+      "maxLength": 4100
+    }
+  },
+  "frontStyle": {
+    "finish": "painted",
+    "handles": "bar"
+  },
+  "runs": [
+    {
+      "id": "B",
+      "kind": "base",
+      "placement": {
+        "type": "wall",
+        "wall": "north",
+        "offset": 0
+      },
+      "units": [
+        {
+          "type": "cabinet",
+          "width": 600,
+          "fronts": {
+            "kind": "drawers",
+            "split": [1, 2, 2]
+          },
+          "shelves": 0
+        },
+        {
+          "type": "cabinet",
+          "width": 600,
+          "fronts": {
+            "kind": "doors",
+            "count": 2
+          },
+          "shelves": 0
+        },
+        {
+          "type": "gap",
+          "width": 600,
+          "label": "Dishwasher",
+          "underWorktop": true
+        },
+        {
+          "type": "cabinet",
+          "width": 600,
+          "fronts": {
+            "kind": "drawers",
+            "split": [1, 1, 1]
+          },
+          "shelves": 0
+        },
+        {
+          "type": "cabinet",
+          "width": 600,
+          "fronts": {
+            "kind": "doors",
+            "count": 1,
+            "hinge": "right"
+          },
+          "shelves": 1
+        }
+      ]
+    },
+    {
+      "id": "W",
+      "kind": "wall",
+      "placement": {
+        "type": "wall",
+        "wall": "north",
+        "offset": 0
+      },
+      "units": [
+        {
+          "type": "cabinet",
+          "width": 600,
+          "fronts": {
+            "kind": "doors",
+            "count": 2
+          },
+          "shelves": 1
+        },
+        {
+          "type": "cabinet",
+          "width": 600,
+          "fronts": {
+            "kind": "lift-up"
+          },
+          "shelves": 1
+        },
+        {
+          "type": "cabinet",
+          "width": 600,
+          "fronts": {
+            "kind": "doors",
+            "count": 2
+          },
+          "shelves": 1
+        },
+        {
+          "type": "gap",
+          "width": 600,
+          "label": "Hood"
+        },
+        {
+          "type": "cabinet",
+          "width": 600,
+          "fronts": {
+            "kind": "doors",
+            "count": 1,
+            "hinge": "right"
+          },
+          "shelves": 1
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "kind": "base",
+      "placement": {
+        "type": "wall",
+        "wall": "corner",
+        "offset": 265
+      },
+      "units": [
+        {
+          "type": "cabinet",
+          "width": 600,
+          "fronts": {
+            "kind": "drawers",
+            "split": [1, 1]
+          },
+          "shelves": 0
+        }
+      ]
+    },
+    {
+      "id": "I",
+      "kind": "base",
+      "placement": {
+        "type": "free",
+        "origin": [3000, 2700],
+        "angleDeg": 180
+      },
+      "units": [
+        {
+          "type": "cabinet",
+          "width": 600,
+          "fronts": {
+            "kind": "drawers",
+            "split": [1, 2, 2]
+          },
+          "shelves": 0
+        },
+        {
+          "type": "cabinet",
+          "width": 600,
+          "fronts": {
+            "kind": "doors",
+            "count": 2
+          },
+          "shelves": 1
+        },
+        {
+          "type": "cabinet",
+          "width": 600,
+          "fronts": {
+            "kind": "drawers",
+            "split": [1, 1, 1]
+          },
+          "shelves": 0
+        }
+      ]
+    }
+  ]
+}

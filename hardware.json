@@ -1,0 +1,28 @@
+{
+  "format": "kitchen-hardware",
+  "version": 1,
+  "note": "Generic hardware names and placeholder rules, in millimetres. Replace them with the stocked products and the manufacturers' data sheets before taking orders.",
+  "hinge": {
+    "name": "Clip-on hinge 110°, soft close, with mounting plate",
+    "countByDoorHeight": [[900, 2], [1600, 3], [2000, 4], [2400, 5]],
+    "edgeDistance": 100
+  },
+  "drawerSystem": {
+    "name": "Double-wall drawer set, soft close",
+    "nominalLengths": [270, 300, 350, 400, 450, 500, 550],
+    "sideHeights": [83, 115, 199],
+    "sideThickness": 16,
+    "depthClearance": 10,
+    "frontClearance": 40,
+    "bottomWidthDeduction": 75,
+    "bottomDepthDeduction": 10,
+    "backWidthDeduction": 87,
+    "backHeightDeduction": 15
+  },
+  "liftUp": { "name": "Lift-up flap mechanism set" },
+  "leg": { "name": "Adjustable cabinet leg" },
+  "plinthClip": { "name": "Plinth clip" },
+  "shelfPin": { "name": "Shelf support pin" },
+  "wallHanger": { "name": "Wall cabinet hanger" },
+  "handle": { "name": "Bar handle, 128 mm centres", "length": 160, "centres": 128 }
+}
